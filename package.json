@@ -1,0 +1,23 @@
+{
+  "name": "phpexe",
+  "version": "0.1.0",
+  "description": "Execute PHP from within Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "PHP",
+    "Node",
+	"RPC"
+  ],
+  "dependencies": {
+  },
+  "author": "angleman",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-bump": "0.0.13",
+    "license-md": "~0.3.6"
+  }
+}
