@@ -30,7 +30,7 @@ php('sample.php', function(error, data) {
 	if (error) {
 		console.log(error) // PHP error or stderr
 	} else {
-		console.log(data); // PHP stdout
+		console.log(data); // PHP stdout  'Hello'
 	}
 ```
 
