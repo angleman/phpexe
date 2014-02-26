@@ -32,6 +32,7 @@ php('sample.php', function(error, data) {
 	} else {
 		console.log(data); // PHP stdout  'Hello'
 	}
+});
 ```
 
 
