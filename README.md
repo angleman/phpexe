@@ -33,6 +33,15 @@ php('sample.php', function(error, data) {
 		console.log(data); // PHP stdout  'Hello'
 	}
 });
+
+var args = ['first parameter', 'second']
+php('sample.php', args, function(error, data) {
+	if (error) {
+		console.log(error) // PHP error or stderr
+	} else {
+		console.log(data); // PHP stdout  'Hello'
+	}
+});
 ```
 
 

@@ -9,8 +9,14 @@
 var exec = require("child_process").exec;
 
 
-function phpExe(command, callback) {
-	exec("php " + command, function (error, stdout, stderr) {
+function phpExe(command, args, callback) {
+	if (typeof args === 'function') {
+		callback = args
+		args = undefined
+	}
+	args = (args) ? ' "' + args.join('" "') + '"' : ''
+	command = 'php ' + command + args
+	exec(command, function (error, stdout, stderr) {
 		if (!error && stderr.length > 0) {
 			error = stderr;
 		}
